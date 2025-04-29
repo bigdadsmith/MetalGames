@@ -18,18 +18,6 @@ Currently, the application is capable of:
 * Saving and automatically loading the list of added programs on application launch (persistence).
 * Allowing manual specification of the Windows path to the executable inside the bottle for more correct launching of installed programs.
 
-## Getting Started (for Developers)
-
-To build and run the project from source:
-
-1.  Ensure you have Xcode and the necessary command-line tools installed.
-2.  Ensure you have Wine or Game Porting Toolkit installed (e.g., via Homebrew).
-3.  Clone this repository.
-4.  Open the project file (`.xcodeproj` or `.xcworkspace`) in Xcode.
-5.  In your project settings in Xcode, under the "Signing & Capabilities" tab, temporarily **disable App Sandbox** to allow the application to launch external processes (`Process`) and access files outside its sandbox during development.
-6.  In the `GameDetailView.swift` file (where the `launchGame` function is), ensure the path to the Wine binary (`let wineBinaryPath = ...`) is specified correctly for your system.
-7.  Build and run the application in Xcode.
-
 ## Requirements
 
 * macOS Operating System 14+
